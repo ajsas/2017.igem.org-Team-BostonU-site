@@ -1,1 +1,135 @@
+<html>
+<head>
+<style>
+.logo_2017, #sideMenu, #firstHeading, #bars_item { /* HIDES UNWANTED STUFF */
+	display: none;
+}
+#bodyContent {
+	padding-right: 0px;
+	width: 100%;
+}
+#top-section-bar { /*-- styling full width bar which hides behind default menu bar (edit, page, history, etc.) --*/
+	width: 100%;
+}
+#globalWrapper, #content { /* THIS IS A DEFAULT TAG. DONT KNOW IF NECESSARY BUT ALAN DID IT SO **LEGACY** */
+	width: 100%; 
+	height: 100%;
+	border: 0px;
+	background-color: transparent;
+	margin: 0px;
+	padding: 0px;
+}
+#banner { /* SEE ABOVE */
+	margin-top: 50px;
+	width: 100%;
+}
+body {
+	width: 100%;
+}
+.logo { /* LOGO IN MENU */
+	height: 37px;
+	width: 387px;
+	margin-top: -3px;
+	margin-left: -200px;
+	z-index: 99;
+}
+red {color: #cc0000 !important;} /* LOL */
+#mainwrap {
+	width: 900px;
+	margin: 0 auto;
+}
+#menubar { /* MASTER MENU TABLE */
+	position: fixed;
+	display: table-row;    
+	list-style-type: none;
+	margin-top: -1px
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	background-color: #fefefe;
+	width: 100%;
+	height: 80px;
+	top:0px;
+	padding-left: 3000px; /* THIS MAKES IT EXTEND TO FULL WIDTH */
+	margin-left: -3000px;
+	padding-right: 3000px;
+	margin-right: -3000px;
+}
+#menubar li {
+	display: table-cell;
+}
+li .menuitem, .dropbtn { /* MAIN MENU BUTTONS */
+	display: table-cell;
+	font-family: Arial, sans-serif;
+	font-size: 130%;
+	color: #605e5e !important;
+	text-align: center;
+	vertical-align: sub;
+	padding: 40px 18px;
+	text-decoration: none !important;
+	-webkit-transition:2s;
+}
+li.dropdown {
+	display: table-cell;
+}
+.dropdown-content { /* DROP DOWN MENU CONTAINERS */
+	display: none;
+	position: absolute;
+	background-color: #fefefe;
+	min-width: 160px;
+	z-index: 1;
+	margin-top: -12px;
+}
+.dropdown-content .menuitem { /* RAIN DROP ... DROP DOWN */
+	color: black;
+	padding: 18px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+.dropdown-content .menuitem:hover {background-color: #fefefe;} /* HOVER ANIMATIONS */
+.dropdown:hover .dropdown-content {display: block;}
+li .menuitem:hover, .dropdown:hover .dropbtn {color: #cc0000 !important; -webkit-transition:0.25s;}
+.logo:hover {color: #b9b4b4 !important; -webkit-transition:1s;}
+</style>
+</head>
 
+
+<body>
+	<div id="mainwrap">
+		<ul id="menubar">
+			<li><a href="http://2017.igem.org/Team:BostonU"><img class="logo" src="http://2017.igem.org/wiki/images/d/de/T--BostonU--LandingPageLogo1.svg"></a></img></li>
+			<li><a class="menuitem" href="http://2017.igem.org/Team:BostonU/Team">Team</a></li>
+			<li class="dropdown">
+				<a href="http://2017.igem.org/Team:BostonU/Overview" class="dropbtn">Research</a>
+				<div class="dropdown-content">
+					<a class="menuitem" href="http://2017.igem.org/Team:BostonU/Description">Project Description</a>
+					<a class="menuitem" href="#">Matt's Yields</a>
+					<a class="menuitem" href="http://2017.igem.org/Team:BostonU/Notebook">Laboratory Notebook</a>
+					<a class="menuitem" href="#">Modelling</a> 
+					<a class="menuitem" href="#">Video</a>
+				</div>
+			</li>
+			<li><a class="menuitem" href="http://2017.igem.org/Team:BostonU">Achievements</a></li>
+			<li class="dropdown">
+				<a href="#" class="dropbtn">Dropdown</a>
+				<div class="dropdown-content">
+					<a class="menuitem" href="#">Parts Submitted</a>
+					<a class="menuitem" href="#">Demonstration</a>
+					<a class="menuitem" href="#">Awards</a>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="#" class="dropbtn">Considerations</a>
+				<div class="dropdown-content">
+					<a class="menuitem" href="#">Collaboration</a>
+					<a class="menuitem" href="#">Safety</a>
+					<a class="menuitem" href="#">Interlab Study</a>
+					<a class="menuitem" href="#">Policy & Practices</a>
+					<a class="menuitem" href="#">STEM Pathways</a>
+				</div>
+			</li>
+			<li><a class="menuitem" href="http://2017.igem.org/Team:BostonU/Acknowledgements">Acknowledgements</a></li>
+		</ul>
+	</div>
+</body>
