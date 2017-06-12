@@ -1,6 +1,7 @@
 # 2017.igem.org-Team-BostonU-site
 scripts thrown to mediawiki for 2017 igem team<br />
 <h2>sitemap:</h2><br />
+asterisk denotes judged page(s)<br />
 <a href="http://2017.igem.org/Team:BostonU">index/landing pg</a><br />
 <h3>team</h3><br />
 <a href="http://2017.igem.org/Team:BostonU/Team">team</a><br />
