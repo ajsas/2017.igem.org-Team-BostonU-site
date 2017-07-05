@@ -2,6 +2,9 @@
 <html>
 <head>
 <style>
+.singlespace {
+  line-height: 1;
+}
 body {
         background-color: #fff0f0;
 }
@@ -12,16 +15,18 @@ body {
         padding-top: 100px;
         padding-left: 10px;
 }
+.tab { text-indent: 40px;}
 .desc_1 {
   font-family: Arial, sans-serif;
+  line-height: 1.5;
 }
 h1 {
-  font-size: 250%;
-  color: #605E5E;
+  font-size: 275%;
+  color: #B9B4B4;
 }
-.desc_1 p {
+.desc_1 > p {
   font-size: 120%;
-  text-indent: 1.5em;
+  color: #605E5E;
 }
 </style>
 </head>
@@ -29,13 +34,26 @@ h1 {
 <div id="landingwrapper">
 <section class="desc_1">
 <h1>Project Description</h1>
-<p>A main goal of synthetic biology is to precisely modulate cellular behavior through the design and implementation of novel genetic circuits. Regulatory components that offer strong orthogonality, wide dynamic range, and low metabolic burden are necessary to construct effective synthetic gene networks. RNA-based regulatory components are one class of devices currently being explored for these purposes. Further, there has been an interest in developing RNA based regulatory components for the detection of a number of diseases, such as Zika and Ebola. In addition, Best et al. developed a method for diagnosing cancer by characterizing expression levels of 1,172 mRNAs. Toehold switches are newly designed riboregulators that exhibit orthogonality and an impressive dynamic range. Toehold switches are composed of two parts: the first is a strand of mRNA called a switch that forms a hairpin loop secondary structure in which the start codon for a downstream gene is sequestered. The other component is a linear section of mRNA known as a trigger that binds to the beginning of the switch, causing the switch to unfold and allowing for protein expression from the gene contained downstream of the hairpin. If the expression cassette codes for a fluorescent protein, a fluorescence readout can allow for the detection of the trigger mRNA.
-<br>
-Altered mRNA profiles can be indicative of a number of diseases. Already, toeholds have been utilized to detect the presence of viral mRNA for Ebola and Zika viruses (Pardee et al.). Toeholds offer an effective method of identifying disease when the detection of mRNA can be binary and the necessary number of mRNAs need for detection is on the scale of 10 to 100, as in Ebola and Zika. At this point, utilizing toehold switches to detect diseases such as cancer, where it is necessary to measure relative expression levels of a large number of genes, is not feasible. We aim to ease this problem by developing a logic framework that allows for the detection of multiple mRNAs to drive complex decision-making machinery. These toehold-based logic gates, when utilized in conjunction with a cell-free transcription translation system, can be applied in a microfluidic point-of-care diagnostic device.
-<br>
+<p class="tab">A main goal of synthetic biology is to precisely modulate cellular behavior through the design and implementation of novel genetic circuits. Regulatory components that offer strong orthogonality, wide dynamic range, and low metabolic burden are necessary to construct effective synthetic gene networks. RNA-based regulatory components are one class of devices currently being explored for these purposes. Further, there has been an interest in developing RNA based regulatory components for the detection of a number of diseases, such as Zika and Ebola. In addition, Best et al. developed a method for diagnosing cancer by characterizing expression levels of 1,172 mRNAs.<sup>1</sup> Toehold switches are newly designed riboregulators that exhibit orthogonality and an impressive dynamic range. Toehold switches are composed of two parts: the first is a strand of mRNA called a switch that forms a hairpin loop secondary structure in which the start codon for a downstream gene is sequestered.<sup>2</sup> The other component is a linear section of mRNA known as a trigger that binds to the beginning of the switch, causing the switch to unfold and allowing for protein expression from the gene contained downstream of the hairpin. If the expression cassette codes for a fluorescent protein, a fluorescence readout can allow for the detection of the trigger mRNA.
+</p>
+<p class="tab">
+Altered mRNA profiles can be indicative of a number of diseases. Already, toeholds have been utilized to detect the presence of viral mRNA for Ebola and Zika viruses.<sup>3</sup> Toeholds offer an effective method of identifying disease when the detection of mRNA can be binary and the necessary number of mRNAs need for detection is on the scale of 10 to 100, as in Ebola and Zika. At this point, utilizing toehold switches to detect diseases such as cancer, where it is necessary to measure relative expression levels of a large number of genes, is not feasible. We aim to ease this problem by developing a logic framework that allows for the detection of multiple mRNAs to drive complex decision-making machinery. These toehold-based logic gates, when utilized in conjunction with a cell-free transcription translation system, can be applied in a microfluidic point-of-care diagnostic device.
+</p>
+<p class="tab">
 In our system, we will utilize trigger-toehold pairs to drive the downstream expression of recombinase proteins. These proteins can then be used to control the expression of genes flanked by recombinase-recognition sites. The presence or absence of specific trigger mRNAs will drive variable recombinase expression and therefore alter the expression of downstream genes that can code for fluorescent proteins. This results in a system that produces variable measurable responses based on the presence of specific mRNA sequences. This logic can be used to simplify the detection of large sets of mRNAs, allowing for complex RNA based detection devices.
+</p>
+<p class="tab">
+We are currently in the process of testing previously characterized toehold switches in order to optimize the TX-TL system.
+</p>
+<p class="singlespace">
 <br>
-There is currently no framework in place for the selection of toehold switch candidates from endogenous genes.  We aim to generate design principles in an attempt to create this framework. To accomplish this, we will construct toehold switches with varying physical characteristics (i.e. GC content, melting temperature, and secondary structure) and map their genetic architecture to the performance of the switch. By determining which switches work and what they have in common, we will be able to formulate design principles to improve the process for designing high performing toehold switches. In addition, we will utilize these design principles to generate a model that will take a gene containing potential trigger sequences as an input and will output potential high performing toehold switches. In the future, this model will aid in the design of endogenous mRNA sensing toehold switches that have applications for use in point-of-care diagnostic devices.
+1. Best, M. G., Sol, N., Kooi, I., Tannous, J., Westerman, B. A., Rustenburg, F., ... & Ylstra, B. (2015). RNA-Seq of tumor-educated platelets enables blood-based pan-cancer, multiclass, and molecular pathway cancer diagnostics. Cancer cell, 28(5), 666-676.
+</p>
+<p class="singlespace">
+2. Green, Alexander A., Pamela A. Silver, James J. Collins, and Peng Yin. 2014. “Toehold  Switches: De-Novo-Designed Regulators of Gene Expression.” Cell 159 (4). Elsevier Inc.: 925–39. doi:10.1016/j.cell.2014.10.002.
+</p>
+<p class="singlespace">
+3. Pardee, K., Green, A. A., Takahashi, M. K., Braff, D., Lambert, G., Lee, J. W., ... & Daringer, N. M. (2016). Rapid, low-cost detection of Zika virus using programmable biomolecular components. Cell, 165(5), 1255-1266.
 </p>
 </section>
 </div>

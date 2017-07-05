@@ -1,0 +1,50 @@
+<html>
+<head>
+<style>
+body {
+background-color: #fff0f0;
+background-image:url("http://parts.igem.org/wiki/images/thumb/5/5b/Cambridge_2009-RAINBOW.png/500px-Cambridge_2009-RAINBOW.png");
+background-repeat:repeat-x;
+background-position: 50% 28.5%;
+}
+#landingwrapper {
+  width: 900px;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+#part1 p {
+  position:relative;
+  left:50px;
+  top:150px;
+  font-size:400%;
+  color:#605E5E;
+  text-align:center;
+  font-family: Arial,sans-serif;
+}
+#part2 p {
+  font-size:250%;
+  color:#605E5E;
+  text-align:center;
+
+}
+#part3 p {
+  font-size:150%;
+  color:#b9b4b4;
+ text-align:center;
+
+}
+</style>
+</head>
+<body>
+<div id="landingwrapper">
+<section id="part1">
+  <p>Registry Parts</p>
+<section id="part2">
+  <p>Summary</p>
+<section id="part3">
+  <p> This is a summary of all parts we submitted to registry.</p>
+</div>
+</section
+</body>
+</html>
