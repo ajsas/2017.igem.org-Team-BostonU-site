@@ -1,0 +1,112 @@
+{{BU17_template_menubar}}
+<html>
+<head>
+<style>
+#landingwrapper {
+        width: 900px;
+        height: 100%;
+        margin: 0 auto;
+        padding-top: 100px;
+        padding-left: 10px;
+}
+#bunch {
+  display: inline;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-width: 0;
+  text-decoration: none;
+  table-layout: fixed;
+  border: none;
+}
+#bunch td {
+  display: table-cell;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  overflow: hidden;
+}
+#bunch td img {
+  border: none;
+  padding: 0;
+  margin: 0;
+  height: 120px;
+  width: 120px;
+  -webkit-transition:0.25s;
+  align-items: center;
+  opacity: 0.85;
+}
+#bunch p {
+  height: 120px;
+  width: 120px;
+}
+#desc {
+  height: 120px;
+  width: 120px;
+  font-size: 75%;
+}
+#bunch img:hover {
+   opacity: 1;
+   -webkit-transition:0.25s;
+   height: 145px;
+   width: 145px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#ab').mouseover(function () {
+      $('#desc').text('This could be a bio for Abbey! It is pretty long, because she has a lot to say about herself. I can make the text smaller, and add lots more words, such as Lorem Ipsum.');
+  });
+  $('#th').mouseover(function () {
+      $('#desc').text('This could be a bio for Thomas! It is pretty long, because he has a lot to say about himself. I can make the text smaller, and add lots more words, such as I love Maine.');
+  });
+  $('#sa').mouseover(function () {
+      $('#desc').text('This could be a bio for Saimrunali! It is pretty long, because she has a lot to say about herself. I can make the text smaller, and add lots more words, such as I love agar.');
+  });
+  $('#al').mouseover(function () {
+      $('#desc').text("This could be Alan's bio! Hi dad!");
+  });
+  $('#ma').mouseover(function () {
+      $('#desc').text("This could be Matt's bio. Yikes.");
+  });
+  $('#st').mouseover(function () {
+      $('#desc').text('This could be a bio for Stephen! It is long, because he has a lot to say about himself. I can make the text smaller, and add more words, such as I do graphic design on the side.');
+  });
+  $('#so').mouseover(function () {
+      $('#desc').text('This could be a bio for Sophia! It is pretty long, because she has a lot to say about herself. I can make the text smaller, and add lots more words, such as Lorem Ipsum.');
+  });
+  $('#md').mouseover(function () {
+      $('#desc').text("This could be a bio for Madeline! It is pretty long, because she has a lot to say about herself. I can make the text smaller, and add lots more words, such as I don't like that idea.");
+  });
+  $('#bunch td').mouseleave(function () {
+      $('#desc').text("Mouse over a member of our team to learn about them!");
+  });
+});
+</script>
+</script>
+</head>
+<body>
+  <div id='landingwrapper'>
+  <table id="bunch" class="centered">
+    <tr>
+      <td><img src="img/headshot.png" id="ab"></img></td>
+      <td><img src="img/headshot.png" id="th"></img></td>
+      <td><img src="img/headshot.png" id="sa"></img></td>
+    </tr>
+    <tr>
+      <td><img src="img/headshot.png" id="al"></img></td>
+      <td>
+        <p id="desc">Mouse over a member of our team to learn about them!
+        </p>
+      </td>
+      <td><img src="img/headshot.png" id="ma"></img></td>
+    </tr>
+    <tr>
+      <td><img src="img/headshot.png" id="st"></img></td>
+      <td><img src="img/headshot.png" id="so"></img></td>
+      <td><img src="img/headshot.png" id="md"></img></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
