@@ -2,6 +2,9 @@
 <html>
 <head>
 <style>
+body            {
+         background-color: #f5efef;
+}
 #landingwrapper {
         width: 900px;
         height: 100%;
@@ -9,6 +12,20 @@
         padding-top: 100px;
         padding-left: 10px;
 }
+
+#HQ_page table {
+    border: none;
+}
+#HQ_page td {
+    padding: 0px;
+    border-collapse: collapse;
+    vertical-align: -webkit-baseline-middle;
+}
+
+user agent stylesheet
+td
+
+
 #bunch {
   display: inline;
   border-collapse: collapse;
@@ -20,35 +37,38 @@
 }
 #bunch td {
   display: table-cell;
-  height: 150px;
-  width: 150px;
+  height: 200px !important;
+  width: 200px !important;
   text-align: center;
   overflow: hidden;
+  border: none;
+  background-color: #f5efef;
 }
 #bunch td img {
   border: none;
   padding: 0;
   margin: 0;
-  height: 120px;
-  width: 120px;
+  height: 170px;
+  width: 170px;
   -webkit-transition:0.25s;
   align-items: center;
   opacity: 0.85;
 }
 #bunch p {
-  height: 120px;
-  width: 120px;
+  fk
+  height: 170px;
+  width: 170px;
 }
 #desc {
-  height: 120px;
-  width: 120px;
+  height: 170px;
+  width: 170px;
   font-size: 75%;
 }
 #bunch img:hover {
    opacity: 1;
    -webkit-transition:0.25s;
-   height: 145px;
-   width: 145px;
+   height: 185px;
+   width: 185px;
 }
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -64,10 +84,10 @@ $(document).ready(function() {
       $('#desc').text('This could be a bio for Saimrunali! It is pretty long, because she has a lot to say about herself. I can make the text smaller, and add lots more words, such as I love agar.');
   });
   $('#al').mouseover(function () {
-      $('#desc').text("This could be Alan's bio! Hi dad!");
+      $('#desc').text("This could be Alan's bio!");
   });
   $('#ma').mouseover(function () {
-      $('#desc').text("This could be Matt's bio. Yikes.");
+      $('#desc').text("This could be Matt's bio.");
   });
   $('#st').mouseover(function () {
       $('#desc').text('This could be a bio for Stephen! It is long, because he has a lot to say about himself. I can make the text smaller, and add more words, such as I do graphic design on the side.');
@@ -87,14 +107,14 @@ $(document).ready(function() {
 </head>
 <body>
   <div id='landingwrapper'>
-  <table id="bunch" class="centered">
+  <table id="bunch" class="centered" align = center">
     <tr>
-      <td><img src="img/headshot.png" id="ab"></img></td>
-      <td><img src="img/headshot.png" id="th"></img></td>
-      <td><img src="img/headshot.png" id="sa"></img></td>
+      <td><img src="http://2017.igem.org/wiki/images/7/74/T--BostonU--abbeybio.jpg" id="ab"></img></td>
+      <td><img src="http://2017.igem.org/wiki/images/f/fc/T--BostonU--thomasbio.jpg" id="th"></img></td>
+      <td><img src="http://2017.igem.org/wiki/images/6/64/T--BostonU--saibio.jpg" id="sa"></img></td>
     </tr>
     <tr>
-      <td><img src="img/headshot.png" id="al"></img></td>
+      <td><img src="http://2017.igem.org/wiki/images/8/84/T--BostonU--alanbio.jpg" id="al"></img></td>
       <td>
         <p id="desc">Mouse over a member of our team to learn about them!
         </p>
@@ -102,9 +122,9 @@ $(document).ready(function() {
       <td><img src="img/headshot.png" id="ma"></img></td>
     </tr>
     <tr>
-      <td><img src="img/headshot.png" id="st"></img></td>
-      <td><img src="img/headshot.png" id="so"></img></td>
-      <td><img src="img/headshot.png" id="md"></img></td>
+      <td><img src="http://2017.igem.org/wiki/images/f/f4/T--BostonU--stevebio.jpg" id="st"></img></td>
+      <td><img src="http://2017.igem.org/wiki/images/4/47/T--BostonU--sophiabio.jpg" id="so"></img></td>
+      <td><img src="http://2017.igem.org/wiki/images/2/2c/T--BostonU--madelinebio.jpg" id="md"></img></td>
     </tr>
   </table>
 </div>
